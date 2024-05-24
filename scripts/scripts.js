@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
+
         lazyImages.forEach(function (lazyImage) {
             lazyImageObserver.observe(lazyImage);
         });
@@ -58,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+
 // Form validation
 document.querySelector('form').addEventListener('submit', function (e) {
     e.preventDefault();
@@ -67,7 +69,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
     let message = document.getElementById('message').value;
 
     if (name === '' || email === '' || message === '') {
-        alert('All fields are required.');
+        alert('All fields are required to fill the form.');
     } else {
         alert('Form submitted successfully!');
     }
