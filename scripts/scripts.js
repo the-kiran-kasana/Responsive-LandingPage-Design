@@ -1,3 +1,6 @@
+
+
+
 // Smooth scrolling for internal links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -8,6 +11,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
 
 // Lazy loading for images
 document.addEventListener('DOMContentLoaded', function () {
@@ -24,8 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         });
-
-
         lazyImages.forEach(function (lazyImage) {
             lazyImageObserver.observe(lazyImage);
         });
